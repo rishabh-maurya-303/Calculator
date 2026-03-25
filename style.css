@@ -86,13 +86,15 @@ body {
 }
 
 #input,
-#result {
+#result,
+#output-div {
     scrollbar-width: none;
     overflow-y: hidden;
 }
 
 #input::-webkit-scrollbar,
-#result::-webkit-scrollbar {
+#result::-webkit-scrollbar,
+#output-div::-webkit-scrollbar {
     display: none !important;
 }
 

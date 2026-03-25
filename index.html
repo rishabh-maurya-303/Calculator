@@ -37,9 +37,8 @@
                     class="w-full text-gray-400 text-lg text-right overflow-x-auto whitespace-nowrap scrollbar-hide">
                 </div>
 
-                <div id="result"
-                    class="w-full text-5xl font-semibold text-right overflow-x-auto whitespace-nowrap scrollbar-hide">
-                    = 0
+                <div id="output-div" class="relative w-full text-5xl font-semibold text-right overflow-x-auto whitespace-nowrap scrollbar-hide">
+                    <span>=</span> <span id="result">0</span>
                 </div>
 
             </div>
@@ -47,7 +46,8 @@
             <div class="buttons flex flex-col items-center gap-5 mt-5">
                 <div class="row flex gap-5">
                     <div onclick="reset()" class="col operator">AC</div>
-                    <div onclick="handleClickButton(this)" class="col operator"><i class="fa-solid fa-delete-left"></i></div>
+                    <div onclick="handleClickButton(this)" class="col operator"><i class="fa-solid fa-delete-left"></i>
+                    </div>
                     <div onclick="handleClickButton(this)" class="col operator">%</div>
                     <div onclick="handleClickButton(this)" class="col pb-1 operator">/</div>
                 </div>
@@ -72,7 +72,8 @@
                         </div>
                         <div class="row flex gap-5">
                             <div onclick="handleClickButton(this)" class="col">0</div>
-                            <div onclick="handleClickButton(this)" class="col pb-5 operator" style="font-size: xx-large;">.</div>
+                            <div onclick="handleClickButton(this)" class="col pb-5 operator"
+                                style="font-size: xx-large;">.</div>
                             <div onclick="handleClickButton(this)" class="col operator">=</div>
                         </div>
                     </div>
