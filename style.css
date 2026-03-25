@@ -1,9 +1,9 @@
 :root {
     --base: white;
     --theme-switch: black;
-    --body-bg: linear-gradient(135deg,#689ff8, #fdfdfd);
+    --body-bg: linear-gradient(135deg, #689ff8, #fdfdfd);
     --border-color: rgba(159, 235, 248, 0.349);
-    --operator-bg:rgb(0, 140, 255);
+    --operator-bg: rgb(0, 140, 255);
 }
 
 .darkmode {
@@ -11,7 +11,7 @@
     --theme-switch: white;
     --body-bg: linear-gradient(135deg, #081125, #31353b);
     --border-color: rgba(128, 128, 128, 0.164);
-    --operator-bg:#ff9500;
+    --operator-bg: #ff9500;
 }
 
 /* Theme Switch */
@@ -51,7 +51,7 @@
 
 body {
     height: 100vh;
-    background:var(--body-bg);
+    background: var(--body-bg);
     color: var(--theme-switch);
 }
 
@@ -80,8 +80,8 @@ body {
     height: 650px;
 }
 
-.calculator{
-    border:2px solid var(--border-color) !important;  
+.calculator {
+    border: 2px solid var(--border-color) !important;
     backdrop-filter: blur(1000px);
 }
 
@@ -90,6 +90,9 @@ body {
 #output-div {
     scrollbar-width: none !important;
     overflow-y: hidden !important;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    white-space: nowrap;
 }
 
 #input::-webkit-scrollbar,
