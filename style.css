@@ -1,0 +1,102 @@
+:root {
+    --base: white;
+    --theme-switch: black;
+    --body-bg: linear-gradient(135deg,#689ff8, #fdfdfd);
+    --border-color: rgba(159, 235, 248, 0.349);
+    --operator-bg:rgb(0, 140, 255);
+}
+
+.darkmode {
+    --base: black;
+    --theme-switch: white;
+    --body-bg: linear-gradient(135deg, #081125, #31353b);
+    --border-color: rgba(128, 128, 128, 0.164);
+    --operator-bg:#ff9500;
+}
+
+/* Theme Switch */
+#theme-switch {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    background: var(--operator-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+#theme-switch:hover {
+    transform: scale(1.1);
+}
+
+#theme-switch svg {
+    fill: var();
+    width: 20px;
+}
+
+#theme-switch svg:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+    display: block;
+}
+
+
+body {
+    height: 100vh;
+    background:var(--body-bg);
+    color: var(--theme-switch);
+}
+
+.col {
+    /* border: 2px solid var(--theme-switch); */
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: bolder;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    color: white;
+    background-color: #1f2937;
+}
+
+.col:hover {
+    transform: scale(1.05);
+}
+
+.container {
+    background: rgba(255, 255, 255, 0);
+    height: 650px;
+}
+
+.calculator{
+    border:2px solid var(--border-color) !important;  
+    backdrop-filter: blur(1000px);
+}
+
+#input,
+#result {
+    scrollbar-width: none;
+    overflow-y: hidden;
+}
+
+#input::-webkit-scrollbar,
+#result::-webkit-scrollbar {
+    display: none !important;
+}
+
+.operator {
+    background: var(--operator-bg);
+    color: white;
+}
