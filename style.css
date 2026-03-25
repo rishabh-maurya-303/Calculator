@@ -88,8 +88,8 @@ body {
 #input,
 #result,
 #output-div {
-    scrollbar-width: none;
-    overflow-y: hidden;
+    scrollbar-width: none !important;
+    overflow-y: hidden !important;
 }
 
 #input::-webkit-scrollbar,

@@ -53,14 +53,5 @@ function handleClickButton(ele){
 function reset() {
     expression = "";
     document.getElementById('input').innerText = "";
-    result.innerText = "= 0";
+    result.innerText = "0";
 }
-
-function updateDisplay() {
-    input.innerText = expression;
-
-    // auto scroll to right
-    input.scrollLeft = input.scrollWidth;
-    result.scrollLeft = result.scrollWidth;
-}
-updateDisplay();
