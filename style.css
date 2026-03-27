@@ -4,6 +4,7 @@
     --body-bg: linear-gradient(135deg, #689ff8, #fdfdfd);
     --border-color: rgba(159, 235, 248, 0.349);
     --operator-bg: rgb(0, 140, 255);
+    --input-text-color:rgb(68, 67, 67);
 }
 
 .darkmode {
@@ -12,6 +13,7 @@
     --body-bg: linear-gradient(135deg, #081125, #31353b);
     --border-color: rgba(128, 128, 128, 0.164);
     --operator-bg: #ff9500;
+    --input-text-color:gray;
 }
 
 /* Theme Switch */
@@ -99,6 +101,10 @@ body {
 #result::-webkit-scrollbar,
 #output-div::-webkit-scrollbar {
     display: none !important;
+}
+
+#input{
+    color: var(--input-text-color);
 }
 
 .operator {
